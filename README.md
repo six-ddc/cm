@@ -19,11 +19,11 @@
 
 // 查看帮助
 	
-	> cm --help
+	cm --help
 
 // 增加username和passwd配置
 
-	> cm --redis "127.0.0.1:6379" --redis-prefix "test" set db.username=root db.passwd=123456
+	cm --redis "127.0.0.1:6379" --redis-prefix "test" set db.username=root db.passwd=123456
 
 // 替换前 test/example.ini
 
@@ -33,7 +33,7 @@
 
 // 替换配置文件中的对应配置
 
-	> cm --redis "127.0.0.1:6379" --redis-prefix "test" get --output test/example.ini.out test/example.ini
+	cm --redis "127.0.0.1:6379" --redis-prefix "test" get --output test/example.ini.out test/example.ini
 
 // 替换后 test/example.ini.out
 
