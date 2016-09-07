@@ -224,7 +224,7 @@ func doSetCommand() int {
 func main() {
 
 	kingpin.Version("0.0.1")
-	kingpin.CommandLine.Name = "qconf"
+	kingpin.CommandLine.Name = "cm"
 	kingpin.CommandLine.Help = "A command-line configuration management tool"
 
 	if len(os.Args) == 1 {

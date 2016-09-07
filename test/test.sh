@@ -10,9 +10,9 @@ _test() {
     cat example.ini
     echo "-----------------"
 
-    cm --redis "${REDIS_HOST}:${REDIS_PORT}" --redis-prefix "${REDIS_PREFIX}" set db.passwd=12345 db.user_name=ddc
+    cm --redis "${REDIS_HOST}:${REDIS_PORT}" --redis-prefix "${REDIS_PREFIX}" set db.passwd=12345 db.username=ddc
 
-    key="${REDIS_PREFIX}:db.user_name"
+    key="${REDIS_PREFIX}:db.username"
     echo "key:${key}"
     redis-cli -h ${REDIS_HOST} -p ${REDIS_PORT} hgetall $key
 
